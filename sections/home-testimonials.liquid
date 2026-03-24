@@ -1,0 +1,13 @@
+<section>
+  <!-- Convert testimonials JSON into blocks -->
+  {% for block in section.blocks %}
+    <blockquote>{{ block.settings.quote }}</blockquote>
+  {% endfor %}
+</section>
+{% schema %}
+{
+  "name": "Home Testimonials",
+  "blocks": [{"type":"item","name":"Testimonial","settings":[{"type":"textarea","id":"quote","label":"Quote"}]}],
+  "presets": [{"name":"Home Testimonials"}]
+}
+{% endschema %}
