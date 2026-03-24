@@ -1,0 +1,16 @@
+<svg width="360" height="100" viewBox="0 0 360 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="15" y1="8" x2="130" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F5FF"/>
+      <stop offset="0.5" stop-color="#6C7BFF"/>
+      <stop offset="1" stop-color="#CC63FF"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="135" y1="55" x2="355" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7EEBFF"/>
+      <stop offset="1" stop-color="#B467FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M15 20L58 84L100 20L80 20L58 56L36 20H15Z" fill="url(#g1)"/>
+  <path d="M102 14C118 22 130 35 132 50C127 68 114 80 98 86" stroke="url(#g1)" stroke-width="6" stroke-linecap="round"/>
+  <text x="135" y="66" fill="url(#g2)" font-size="52" font-family="Inter, Arial, sans-serif" font-weight="800" letter-spacing="2">VELVORA</text>
+</svg>

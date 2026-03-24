@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse futuristic premium products" />
+  <title>Shop Products | VELVORA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body data-page="products">
+  <div id="preloader" class="preloader"><div class="pulse"></div></div>
+  <div id="site-header"></div>
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <!-- Shopify section: product-listing -->
+    <h1 class="text-4xl font-black" data-animate>Shop</h1>
+    <div class="grid lg:grid-cols-[280px_1fr] gap-6 mt-6">
+      <aside class="glass rounded-2xl p-4 space-y-4" data-animate>
+        <h2 class="font-bold">Filters</h2>
+        <div><label class="text-sm text-muted">Category</label><select id="filter-category" class="mt-1 input"></select></div>
+        <div><label class="text-sm text-muted">Max Price</label><input id="filter-price" class="input mt-1" type="range" min="20" max="300" value="300" /></div>
+        <div><label class="text-sm text-muted">Min Rating</label><input id="filter-rating" class="input mt-1" type="number" step="0.1" min="0" max="5" value="0" /></div>
+        <div><label class="text-sm text-muted">Sort</label><select id="sort-by" class="mt-1 input"><option value="default">Default</option><option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option><option value="rating">Rating</option></select></div>
+        <button id="view-toggle" class="glass px-4 py-2 rounded-xl text-sm">Toggle Grid/List</button>
+      </aside>
+      <section><div id="products-grid" class="product-grid"></div></section>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../assets/js/data.js"></script><script src="../assets/js/app.js"></script><script src="../assets/js/pages.js"></script>
+</body>
+</html>

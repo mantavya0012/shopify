@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | VELVORA</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="../assets/css/styles.css" /></head>
+<body>
+<div id="preloader" class="preloader"><div class="pulse"></div></div><div id="site-header"></div>
+<main class="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-6">
+  <section>
+    <h1 class="text-4xl font-black" data-animate>Contact Velvora</h1>
+    <form class="glass rounded-2xl p-8 space-y-4 mt-6" data-animate>
+      <input class="input" placeholder="Name"><input class="input" placeholder="Email" type="email"><textarea class="input" rows="5" placeholder="Message"></textarea>
+      <button class="btn-primary px-6 py-3 rounded-xl">Send Message</button>
+    </form>
+  </section>
+  <section class="glass rounded-2xl p-6" data-animate>
+    <h2 class="font-bold text-xl">Find Nearby Experience Center</h2>
+    <div class="map-shell mt-4"><div id="location-map"></div></div>
+    <button id="detect-location" type="button" class="btn-secondary rounded-xl px-4 py-2 w-full mt-3">Detect My Location</button>
+    <p id="location-status" class="text-sm text-muted mt-2">Allow location access to detect nearby store area.</p>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/data.js"></script><script src="../assets/js/app.js"></script><script src="../assets/js/pages.js"></script>
+</body></html>

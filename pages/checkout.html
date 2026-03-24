@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Checkout UI | VELVORA</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="../assets/css/styles.css" /></head>
+<body data-page="checkout">
+<div id="preloader" class="preloader"><div class="pulse"></div></div><div id="site-header"></div>
+<main class="max-w-6xl mx-auto px-4 py-10">
+  <!-- Shopify section: checkout-ui placeholder -->
+  <h1 class="text-4xl font-black" data-animate>Secure Checkout</h1>
+  <div class="grid lg:grid-cols-3 gap-6 mt-6">
+    <form class="lg:col-span-2 glass rounded-2xl p-6 space-y-4" data-animate>
+      <h2 class="text-xl font-bold">Shipping Details</h2>
+      <input class="input" placeholder="Full Name" required>
+      <input class="input" placeholder="Email" type="email" required>
+      <input class="input" placeholder="Address" required>
+      <div class="grid sm:grid-cols-2 gap-3"><input class="input" placeholder="City"><input class="input" placeholder="ZIP"></div>
+
+      <div class="mt-6">
+        <div class="flex justify-between items-center"><h2 class="text-xl font-bold">Payment Method</h2><span class="text-sm text-muted">Selected: <strong id="active-payment">Card</strong></span></div>
+        <div class="grid sm:grid-cols-2 gap-3 mt-3">
+          <div class="payment-option active" data-method="Card">💳 Card (Visa/MasterCard)</div>
+          <div class="payment-option" data-method="UPI">📲 UPI / Instant Pay</div>
+          <div class="payment-option" data-method="PayPal">🅿️ PayPal</div>
+          <div class="payment-option" data-method="COD">📦 Cash on Delivery</div>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-3 mt-4"><input class="input" placeholder="Card Number"><input class="input" placeholder="Name on Card"></div>
+      <div class="grid sm:grid-cols-2 gap-3"><input class="input" placeholder="MM/YY"><input class="input" placeholder="CVC"></div>
+      <button class="btn-primary px-6 py-3 rounded-xl">Place Order</button>
+    </form>
+
+    <aside class="glass rounded-2xl p-6 space-y-4" data-animate>
+      <h3 class="font-bold">Location-aware Delivery</h3>
+      <div class="map-shell"><div id="location-map"></div></div>
+      <button id="detect-location" type="button" class="btn-secondary rounded-xl px-4 py-2 w-full">Detect My Location</button>
+      <p id="location-status" class="text-sm text-muted">Using default location until detection.</p>
+      <div class="pt-2 border-t border-slate-400/20 text-sm text-muted">Demo UI only. Connect selected payment + location to Shopify checkout/back-end.</div>
+    </aside>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/js/data.js"></script><script src="../assets/js/app.js"></script><script src="../assets/js/pages.js"></script>
+</body></html>

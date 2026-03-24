@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velvora futuristic premium eCommerce experience" />
+  <title>VELVORA — Premium Futuristic Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="home">
+  <div id="preloader" class="preloader"><div class="pulse"></div></div>
+  <div id="site-header"></div>
+
+  <main class="max-w-7xl mx-auto px-4">
+    <!-- Shopify section: hero -->
+    <section class="py-16 md:py-24 grid lg:grid-cols-2 gap-8 items-center">
+      <div data-animate>
+        <p class="badge mb-4">Velvora Signature Collection</p>
+        <h1 class="hero-title text-4xl md:text-6xl font-black leading-tight">Own the <span class="text-cyan-300">Future</span> of Premium Lifestyle</h1>
+        <p class="text-muted mt-4">Ultra-modern dark experience with lightning-fast UX, motion design, and conversion-focused architecture.</p>
+        <div class="mt-7 flex gap-3 flex-wrap">
+          <a href="pages/products.html" class="btn-primary px-5 py-3 rounded-xl">Shop Collection</a>
+          <a href="pages/checkout.html" class="btn-secondary px-5 py-3 rounded-xl">Explore Checkout UX</a>
+        </div>
+      </div>
+      <div class="hero-glow glass rounded-3xl p-4" data-animate>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=1200&q=80" alt="Hero" class="rounded-2xl w-full h-[450px] object-cover" />
+      </div>
+    </section>
+
+    <section class="relative" data-animate>
+      <label for="search" class="text-sm text-muted">Search products</label>
+      <input id="search" class="input mt-1" placeholder="Try 'Nebula'" />
+      <div id="search-suggestions" class="absolute z-20 mt-2 w-full glass rounded-xl p-2"></div>
+    </section>
+
+    <section class="mt-12" data-animate><div class="flex justify-between items-center mb-4"><h2 class="text-2xl font-bold">Featured Products</h2></div><div id="featured-products" class="product-grid"></div></section>
+    <section class="mt-12" data-animate><h2 class="text-2xl font-bold mb-4">Trending Now</h2><div id="trending-products" class="product-grid"></div></section>
+    <section class="mt-12" data-animate><h2 class="text-2xl font-bold mb-4">Categories</h2><div id="categories" class="grid md:grid-cols-3 gap-4"></div></section>
+    <section class="mt-12" data-animate><h2 class="text-2xl font-bold mb-4">Testimonials</h2><div id="testimonials" class="grid md:grid-cols-3 gap-4"></div></section>
+    <section class="mt-12 glass rounded-2xl p-8 text-center" data-animate>
+      <h2 class="text-2xl font-bold">Join the Velvora Insider Club</h2>
+      <p class="text-muted mt-2">Exclusive drops, rewards, and launch access.</p>
+      <form class="max-w-xl mx-auto mt-5 flex flex-col sm:flex-row gap-3">
+        <input class="input" type="email" placeholder="you@example.com" required />
+        <button class="btn-primary px-5 py-3 rounded-xl">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pages.js"></script>
+</body>
+</html>

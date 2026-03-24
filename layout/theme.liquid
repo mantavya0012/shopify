@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ page_title }}</title>
+    {{ content_for_header }}
+    {{ 'styles.css' | asset_url | stylesheet_tag }}
+  </head>
+  <body>
+    {% section 'header' %}
+    <main id="MainContent">{{ content_for_layout }}</main>
+    {% section 'footer' %}
+    {{ 'data.js' | asset_url | script_tag }}
+    {{ 'app.js' | asset_url | script_tag }}
+    {{ 'pages.js' | asset_url | script_tag }}
+  </body>
+</html>

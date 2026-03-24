@@ -1,0 +1,9 @@
+<section>
+  <!-- Bind to Shopify collection products -->
+  {% for product in collections[section.settings.collection].products limit: 8 %}
+    <a href="{{ product.url }}">{{ product.title }}</a>
+  {% endfor %}
+</section>
+{% schema %}
+{ "name": "Home Featured Products", "settings": [{"type":"collection","id":"collection","label":"Collection"}] }
+{% endschema %}
