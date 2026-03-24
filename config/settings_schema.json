@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {"type": "color", "id": "accent_color", "label": "Accent color", "default": "#4f46e5"},
+      {"type": "checkbox", "id": "enable_dark_mode", "label": "Enable dark mode", "default": true}
+    ]
+  }
+]

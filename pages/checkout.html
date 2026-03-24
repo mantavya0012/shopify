@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Checkout UI | NOVA.STORE</title><script src="https://cdn.tailwindcss.com"></script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><link rel="stylesheet" href="../assets/css/styles.css" /></head>
+<body>
+<div id="preloader" class="preloader"><div class="pulse"></div></div><div id="site-header"></div>
+<main class="max-w-5xl mx-auto px-4 py-10">
+  <!-- Shopify section: checkout-ui placeholder -->
+  <h1 class="text-4xl font-black" data-animate>Checkout</h1>
+  <div class="grid lg:grid-cols-3 gap-6 mt-6">
+    <form class="lg:col-span-2 glass rounded-2xl p-6 space-y-4" data-animate>
+      <h2 class="text-xl font-bold">Shipping</h2><input class="input" placeholder="Full Name" required><input class="input" placeholder="Email" type="email" required><input class="input" placeholder="Address" required>
+      <div class="grid sm:grid-cols-2 gap-3"><input class="input" placeholder="City"><input class="input" placeholder="ZIP"></div>
+      <h2 class="text-xl font-bold pt-3">Payment</h2><input class="input" placeholder="Card Number"><div class="grid sm:grid-cols-2 gap-3"><input class="input" placeholder="MM/YY"><input class="input" placeholder="CVC"></div>
+      <button class="btn-primary px-6 py-3 rounded-xl">Place Order</button>
+    </form>
+    <aside class="glass rounded-2xl p-6" data-animate><h3 class="font-bold">Order Summary</h3><p class="text-muted mt-3">Frontend-only checkout UI. Connect to Shopify checkout in Liquid implementation.</p></aside>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="../assets/js/data.js"></script><script src="../assets/js/app.js"></script><script src="../assets/js/pages.js"></script>
+</body></html>
